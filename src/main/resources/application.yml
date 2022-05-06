@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: movie-expert-be
+  datasource:
+    password: 123456
+    url: jdbc:postgresql://localhost:5432/moviebe
+    username: dbmoviebe
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
